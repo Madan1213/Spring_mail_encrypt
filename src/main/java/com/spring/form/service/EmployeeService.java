@@ -25,7 +25,9 @@ public class EmployeeService
 		repo.save(user);
 		
 		//After registering/saving send mail 
-		mailSender.sendRegistrationMail(user.getUsername(), "Welocme To Our Boot Mail Check", "Thank You for registering with us this is Spring boot Generated Mail");
+		mailSender.sendRegistrationMail(user.getUsername(), 
+				"Welocme To Our Boot Mail Check",
+				"Thank You for registering with us this is Spring boot Generated Mail");
 	}
 	
 }
