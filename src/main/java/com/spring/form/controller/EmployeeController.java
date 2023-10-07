@@ -26,7 +26,6 @@ public class EmployeeController
 	@PostMapping("/savings")
 	public String registerUsre(@ModelAttribute EmployeeEntity user)
 	{
-		System.out.println("Logginh"+user);
 		service.registerUser(user);
 		return "SuccessPage";
 	}
